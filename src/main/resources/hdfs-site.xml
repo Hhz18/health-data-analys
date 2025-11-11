@@ -1,0 +1,15 @@
+<configuration>
+    <property>
+        <name>dfs.client.use.datanode.hostname</name>
+        <value>true</value>
+    </property>
+    <!-- 如果你需要让客户端通过公网访问 DataNode，可以加上如下配置（可选） -->
+    <property>
+        <name>dfs.datanode.hostname</name>
+        <value>113.45.42.87</value>
+    </property>
+    <property>
+        <name>hadoop.job.ugi</name>
+        <value>hadoop,hadoop</value>
+    </property>
+</configuration>

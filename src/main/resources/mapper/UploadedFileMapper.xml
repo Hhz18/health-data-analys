@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.healthdata.mappers.UploadedFileMapper">
+    <insert id="insertUploadedFile" parameterType="com.healthdata.entity.UploadedFile">
+        INSERT INTO uploadedfile (name, cat, tag, year)
+        VALUES (#{name}, #{cat}, #{tag}, #{year})
+    </insert>
+</mapper>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.healthdata.mappers.CatMapper">
+    <insert id="insertCat" parameterType="com.healthdata.entity.Cat">
+        INSERT INTO cat (name) VALUES (#{name})
+    </insert>
+    <delete id="deleteCat" parameterType="long">
+        DELETE FROM cat WHERE id = #{id}
+    </delete>
+    <select id="selectAllCats" resultType="com.healthdata.entity.Cat">
+        SELECT id, name FROM cat
+    </select>
+</mapper>
+
